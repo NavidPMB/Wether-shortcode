@@ -1,6 +1,6 @@
 # Weather Shortcode
 
-Simple WordPress plugin that registers `[weather]` and `[wether]` shortcodes.
+Simple WordPress plugin that registers the `[weather]` shortcode and keeps `[wether]` as a compatibility alias.
 
 ## Usage
 

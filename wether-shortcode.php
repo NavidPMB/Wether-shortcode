@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Weather Shortcode
- * Description: Registers [weather] and [wether] shortcodes for simple weather output.
+ * Description: Registers the [weather] shortcode for simple weather output.
  * Version: 1.0.0
  */
 
@@ -49,4 +49,5 @@ function weather_shortcode_render($atts = array(), $content = null, $shortcode_t
 }
 
 add_shortcode('weather', 'weather_shortcode_render');
+// Keep the repository's original typo as a compatibility alias.
 add_shortcode('wether', 'weather_shortcode_render');
