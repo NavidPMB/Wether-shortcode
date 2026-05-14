@@ -1,4 +1,4 @@
-# Wether Shortcode
+# Weather Shortcode
 
 Simple WordPress plugin that registers `[weather]` and `[wether]` shortcodes.
 

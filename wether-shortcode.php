@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Wether Shortcode
+ * Plugin Name: Weather Shortcode
  * Description: Registers [weather] and [wether] shortcodes for simple weather output.
  * Version: 1.0.0
  */
@@ -9,7 +9,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-function wether_shortcode_render($atts = array(), $content = null, $shortcode_tag = 'weather')
+function weather_shortcode_render($atts = array(), $content = null, $shortcode_tag = 'weather')
 {
     $atts = shortcode_atts(
         array(
@@ -43,10 +43,10 @@ function wether_shortcode_render($atts = array(), $content = null, $shortcode_ta
     }
 
     return sprintf(
-        '<div class="wether-shortcode">%s</div>',
+        '<div class="weather-shortcode">%s</div>',
         esc_html(implode(' — ', $parts))
     );
 }
 
-add_shortcode('weather', 'wether_shortcode_render');
-add_shortcode('wether', 'wether_shortcode_render');
+add_shortcode('weather', 'weather_shortcode_render');
+add_shortcode('wether', 'weather_shortcode_render');
